@@ -1,0 +1,104 @@
+You are a senior Flutter developer and mobile UI/UX designer with expertise in 2D chess applications. 
+
+The current project has a basic 2D chessboard and a simple teaching module, but the tutor is not satisfactory and the UI is constrained by Flutter standard widgets. Your goal is to **upgrade the teacher module and redesign the UI for a professional, visually impressive experience**.
+
+--------------------------------------------------
+## OBJECTIVES
+
+1. Upgrade the teacher module:
+   - Provide **dynamic real-time guidance** with richer, interactive hints.
+   - Include:
+     - Opening explanations (name + purpose)
+     - Tactic alerts (fork, pin, discovered attack)
+     - Move evaluation feedback (good/bad/optimal)
+     - Pre-move suggestions with visual cues
+   - Feedback should be **contextual**, concise (max 2–3 sentences), and adaptive to player skill.
+   - Add **progressive learning**:
+     - Beginner → basics of piece movement and board control
+     - Intermediate → basic tactics, opening ideas
+     - Advanced → advanced strategy, endgame concepts
+
+2. Upgrade the UI beyond Flutter standard widgets:
+   - Implement **custom 2D board tiles and piece rendering** using `CustomPainter` or a canvas-based approach.
+   - Add **smooth animations** for:
+     - Piece movement
+     - Captures
+     - Highlights
+     - Pre-move suggestions
+   - Pre-move and feedback highlights:
+     - Good moves → animated green glow
+     - Bad moves → animated red shake effect
+     - Optional subtle yellow for neutral moves
+   - Adaptive layouts:
+     - Chessboard scales for different screen sizes
+     - Separate, collapsible side panel for teaching hints
+   - Professional visual polish:
+     - Gradients, shadows, subtle particle effects
+     - Themeable colors: Light, Dark, Premium Wood, Neon
+
+3. Teacher module visual enhancements:
+   - Replace static SnackBar messages with **rich card-based overlays**.
+   - Include mini-diagrams showing potential moves and tactics.
+   - Optionally use **animated arrows** or circles to show threats or targets.
+   - Hints panel should be dismissible and draggable.
+   - Pre-move hints should appear **directly on the board with animation**, not just in a side panel.
+
+4. UX enhancements:
+   - Tap feedback on pieces
+   - Long-press to show all legal moves with animation
+   - Smooth camera/board panning if zoomable
+   - Gamification elements integrated into UI:
+     - XP progress bar
+     - Achievement badges
+     - Puzzle completion feedback
+
+--------------------------------------------------
+## EXECUTION STRATEGY
+
+Follow step-by-step. Wait for approval before moving to next step. Do NOT implement everything at once.
+
+Step 1:
+- Refactor current teacher module to allow:
+  - Dynamic hints
+  - Move evaluation feedback
+  - Progressive learning levels
+- Keep it modular for future expansion
+
+Step 2:
+- Implement enhanced UI rendering:
+  - CustomPainter or canvas-based 2D board and pieces
+  - Smooth piece and capture animations
+  - Animated highlights for pre-move suggestions
+  - Adaptive scaling for mobile screens
+
+Step 3:
+- Upgrade teacher feedback visuals:
+  - Card-based overlays
+  - Mini-diagrams for tactical hints
+  - Animated arrows or markers for threats
+
+Step 4:
+- Integrate enhanced UI + teacher module together
+- Ensure all hints appear in context:
+  - On move
+  - On pre-move selection
+  - During learning mode
+
+Step 5:
+- Add polish:
+  - Gradients, shadows, subtle particle effects
+  - Themeable color schemes
+  - Animations consistent across board and feedback
+
+Step 6:
+- Test on multiple screen sizes
+- Ensure smooth, responsive, professional UX
+- Prepare for future online features
+
+--------------------------------------------------
+## FOCUS
+
+- Teacher module must feel **interactive, intelligent, and helpful**
+- UI must look **premium, professional, and visually engaging**
+- Animations must be **smooth and consistent**
+- Modular design for **easy future enhancements**

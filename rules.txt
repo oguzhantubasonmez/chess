@@ -1,0 +1,236 @@
+You are a senior mobile developer and UI/UX designer.
+
+Build a modern, visually clean, 2D chess application for Android with a strong focus on teaching and offline gameplay.
+
+The app must be lightweight, fast, and scalable for future online features.
+
+--------------------------------------------------
+## PLATFORM & TECH
+
+- Platform: Android
+- Framework: Flutter (preferred)
+- Chess logic: chess.dart or custom logic
+- Engine: Stockfish (offline, local integration)
+- Architecture: Clean, modular, scalable
+
+--------------------------------------------------
+## CORE VISION
+
+- Simple but premium-looking 2D chess UI
+- Strong teaching system (main focus)
+- Offline-first
+- Easy to use for beginners
+
+--------------------------------------------------
+## CORE FEATURES
+
+### 1. Chess System
+- Full legal rules:
+  - Castling
+  - En passant
+  - Promotion
+  - Check / Checkmate / Stalemate
+
+---
+
+### 2. GAME MODES
+
+- Player vs AI
+- Local 2 Player
+- Learning Mode
+
+---
+
+### 3. LEARNING MODE (MOST IMPORTANT)
+
+- Real-time teaching during gameplay
+- Short explanations (max 2 sentences)
+
+Examples:
+- "This is castling. It protects your king."
+- "You left your piece undefended."
+- "This opening is Queen's Gambit."
+
+- Highlight:
+  - Good moves → green
+  - Mistakes → red
+
+---
+
+### 4. PRE-MOVE SUGGESTION SYSTEM (CRITICAL)
+
+When the user selects a piece BEFORE moving:
+
+- Analyze all legal moves using Stockfish
+- Compare each move to the best move
+
+Visual system:
+- Best moves → GREEN squares
+- Bad moves → RED squares
+- Neutral → no highlight or soft color
+
+Rules:
+- Show max 2–3 best moves
+- Avoid clutter
+- Smooth UI updates
+
+Educational hints:
+- On bad move:
+  "This move may lose material"
+
+- On good move:
+  "This improves your position"
+
+---
+
+### 5. REAL-TIME TEACHING ENGINE
+
+Detect and explain:
+
+- Openings (e.g. Queen's Gambit)
+- Tactics (fork, pin)
+- Concepts:
+  - center control
+  - development
+  - king safety
+
+Use simple rule-based logic (no external AI required).
+
+---
+
+### 6. SKILL ASSESSMENT
+
+- 5–10 puzzle test at first launch
+- Determine level:
+  - Beginner
+  - Intermediate
+  - Advanced
+
+---
+
+### 7. PROGRESSION SYSTEM
+
+- Lessons:
+  - Beginner → piece movement, castling
+  - Intermediate → tactics
+  - Advanced → strategy
+
+- Interactive puzzles
+- Guided AI matches
+
+---
+
+### 8. UI / UX (VERY IMPORTANT)
+
+- Clean 2D board (flat design)
+- Smooth animations
+- Touch-friendly
+
+Highlight:
+- Selected piece
+- Legal moves
+- Last move
+- Mistakes (learning mode)
+
+Themes:
+- Light
+- Dark
+- Minimal modern
+
+---
+
+### 9. GAMIFICATION
+
+- XP system
+- Levels
+- Achievements
+- Daily challenges
+
+---
+
+### 10. SAVE SYSTEM
+
+- Save games
+- Replay games
+- Move history
+- Evaluation bar
+
+---
+
+### 11. ONLINE MODE (PHASE 2)
+
+- Do NOT implement now
+- Show button:
+  "Play Online (Coming Soon)"
+
+Architecture must allow:
+- Multiplayer
+- Matchmaking
+
+---
+
+### 12. PERFORMANCE
+
+- Fully offline
+- Fast response
+- No API dependency
+
+--------------------------------------------------
+## AI COACH RULES
+
+- Max 2 sentences per explanation
+- Beginner-friendly language
+- Teach, don’t overwhelm
+- Prioritize clarity
+
+--------------------------------------------------
+## EXECUTION STRATEGY (VERY IMPORTANT)
+
+You MUST proceed step-by-step and WAIT for user approval after each step.
+
+DO NOT implement everything at once.
+
+Follow this exact order:
+
+Step 1:
+Build 2D chessboard UI and piece movement system.
+(No AI, no engine)
+
+Step 2:
+Implement full chess rules and legal move validation.
+
+Step 3:
+Integrate Stockfish locally and log evaluations.
+
+Step 4:
+Implement pre-move suggestion system:
+- Highlight green (good)
+- Highlight red (bad)
+
+Step 5:
+Implement learning system (real-time hints)
+
+Step 6:
+Improve UI/UX and animations
+
+Step 7:
+Add menus and game modes
+
+Step 8:
+Add "Play Online (Coming Soon)" button
+
+After each step:
+- Stop
+- Explain briefly
+- Wait for approval
+
+DO NOT skip steps.
+DO NOT combine steps.
+
+--------------------------------------------------
+## FOCUS
+
+- Smooth UX
+- Strong teaching experience
+- Clean architecture
+- High user retention
